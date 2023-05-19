@@ -1,0 +1,33 @@
+*,*::after, *::before {box-sizing: border-box};
+
+.conteudo{
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+/* _______________________________________________________ */
+/* (1ª Animação) Trocar a cor de fundo continuamente */
+
+/* Etapa 1 Regra de animação (animaFundo) */
+/* Trocar a cor de fundo da tela */
+
+@keyframes animaFundo {
+    0% {background-color: lightblue;}
+    50% {background-color: lightcoral;}
+    100% {background-color: lightgreen;}
+}
+
+/* Etapa 2 Executar de animação (animaFundo) */
+
+body {
+    font-family: 'Segoe UI';
+
+    /* Versão abreviada da chamada */
+    animation: animaFundo 3s infinite alternate-reverse;
+}
