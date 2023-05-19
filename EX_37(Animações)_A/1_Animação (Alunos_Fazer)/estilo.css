@@ -31,3 +31,59 @@ body {
     /* Versão abreviada da chamada */
     animation: animaFundo 3s infinite alternate-reverse;
 }
+
+/* _______________________________________________________ */
+/* (2ª Animação) Fazer texto aparecer com atraso */
+
+/* Etapa 1 Regra de animação (aparecer) */
+/* Fazer texto aparecer com atraso */
+
+@keyframes aparecer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Etapa 2 Executar de animação (aparecer) */
+
+#dois {
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+/* _______________________________________________________ */
+/* (3ª Animação) Girar */
+
+/* Etapa 1 */
+
+#tres {
+    border: solid 3px;
+    padding: 5px;
+    width: 750px;
+    margin: auto;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes animaImagem {
+    from {transform: translateX(0) rotateZ(0);opacity: 0;}
+
+    to {transform: translateX(570px) rotateZ(360deg);opacity: 1;}
+    
+}
+
+#tres img {
+    /* animation-name: animaImagem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; */
+
+
+    /* Versão abreviada da chamada */
+    animation: animaImagem 2s infinite linear alternate;
+}
