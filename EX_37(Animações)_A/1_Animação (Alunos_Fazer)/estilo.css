@@ -76,6 +76,8 @@ img {
     
 }
 
+/* Etapa 2 */
+
 #tres img {
     /* animation-name: animaImagem;
     animation-duration: 2s;
@@ -86,4 +88,29 @@ img {
 
     /* Versão abreviada da chamada */
     animation: animaImagem 2s infinite linear alternate;
+}
+
+/* _______________________________________________________ */
+/* (4ª Animação) Deslizar */
+
+/* Etapa 1 */
+
+#quatro {
+    border: solid 3px;
+    padding: 5px;
+    width: 750px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+@keyframes animaImagem2 {
+    from {transform: translateX(0);}
+    to {transform: translateX(580px);}
+}
+
+/* Etapa 2 */
+#quatro img {
+
+    /* Versão abreviada da chamada */
+    animation: animaImagem2 2s infinite linear alternate;
 }
